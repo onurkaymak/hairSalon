@@ -1,7 +1,10 @@
 @{
   Layout = "_Layout";
 }
-
 <h1>Hair Salon Admin Panel</h1>
-<p>@Html.ActionLink("See All Stylists", "Index", "Stylists")</p>
-<p>@Html.ActionLink("Add new Client", "Create", "Clients")</p> 
+<div class="container-home-index">
+
+@Html.ActionLink("See All Stylists", "Index", "Stylists", null, new { @class = "link"})
+<br/>
+@Html.ActionLink("Add new Client", "Create", "Clients", null, new { @class = "link"})
+</div>
