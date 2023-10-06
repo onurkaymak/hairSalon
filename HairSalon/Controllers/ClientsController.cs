@@ -17,5 +17,25 @@ namespace HairSalon.Controllers
     }
 
 
+    // /clients/create - GET
+    public ActionResult Create()
+    {
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      return View();
+    }
+
+    // /clients/create - POST
+    [HttpPost]
+    public ActionResult Create(Client client)
+    {
+      if (client.StylistId == 0)
+      {
+        return RedirectToAction("Create");
+      }
+      _db.Clients.Add(client);
+      _db.SaveChanges();
+
+      return RedirectToAction("Details", "Stylists", new { id = client.StylistId });
+    }
   }
 }
