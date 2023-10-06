@@ -19,15 +19,15 @@ else
    <ul class="stylists-container-list">
     @foreach(Stylist stylist in Model)
     {
-      <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
+      <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId }, new { @class = "stylists-list-item" })</li>
     }
     </ul>
   </div>
 
 }
 <div class="container-stylists-links">
-@Html.ActionLink("Home", "Index", "Home",  null, new { @class = "link"})
-@Html.ActionLink("Add new stylist", "Create", null, null, new { @class = "link"})
+@Html.ActionLink("home", "Index", "Home",  null, new { @class = "link"})
+@Html.ActionLink("add new stylist", "Create", null, null, new { @class = "link"})
 </div>
 
 

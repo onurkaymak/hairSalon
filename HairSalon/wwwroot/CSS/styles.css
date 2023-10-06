@@ -93,3 +93,54 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+.stylists-container-list {
+  margin-top: 1rem;
+}
+
+.stylists-list-item {
+  font-size: 3rem;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Barlow', serif;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.stylists-list-item:hover {
+  background-color: rgba(220, 220, 220, 0.5);
+  border-bottom: solid 1px black;
+}
+
+.container-stylists-create {
+  height: 30%;
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3rem;
+}
+
+.input {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.form-button {
+  background-color: transparent;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-bottom: solid 1.5px transparent;
+  box-shadow: 0px 3px 0px transparent;
+  transition: all 0.2s;
+}
+
+.form-button:hover {
+  border-bottom: solid 1.5px black;
+  box-shadow: 0px 3px 0px #e41b0555;
+}
