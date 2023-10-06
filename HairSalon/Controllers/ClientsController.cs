@@ -20,6 +20,11 @@ namespace HairSalon.Controllers
     // /clients/create - GET
     public ActionResult Create()
     {
+      int stylistsCount = _db.Stylists.ToList().Count;
+      if (stylistsCount == 0)
+      {
+        ViewData["NoStylist"] = "noStylist";
+      }
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
@@ -30,7 +35,7 @@ namespace HairSalon.Controllers
     {
       if (client.StylistId == 0)
       {
-        return View("Create", ViewBag.formError = true);
+        return RedirectToAction("Create");
       }
       _db.Clients.Add(client);
       _db.SaveChanges();
