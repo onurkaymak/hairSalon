@@ -4,29 +4,28 @@
 
 @model HairSalon.Models.Client
 
-<h4>Add a new client</h4>
-
-
+<h1>Add a new client</h1>
 
 @if(@ViewData["NoStylist"] == "noStylist")
 {
   <p><strong>NOTE:</strong>You need to have at least one stylist in your stylist list to add an client.</p>
-  <p>You can click a @Html.ActionLink("here", "Create", "Stylists") to add new stylist in the list.</p>
+  <p>You can click a @Html.ActionLink("here", "Create", "Stylists", null, new { @class = "error-link"}) to add new stylist in the list.</p>
 
 }
 else
 {
+<div class="container-stylists-create">
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
+  @Html.LabelFor(model => model.Name, new { @class = "input" })
+  @Html.TextBoxFor(model => model.Name, new { @class = "input" })
 
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+  @Html.LabelFor(model => model.Stylist, new { @class = "input" })
+  @Html.DropDownList("StylistId", null, new { @class = "input" })
 
-  <input type="submit" value="Add new client" class="btn btn-primary"/>
+  <input type="submit" value="Add new client" class="form-button"/>
 }
+</div>
 }
 
-
-<p>@Html.ActionLink("Back to home", "Index", "Home")</p>
+<p>@Html.ActionLink("back to home", "Index", "Home", null, new { @class = "link"})</p>
