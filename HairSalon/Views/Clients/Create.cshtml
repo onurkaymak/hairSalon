@@ -8,6 +8,11 @@
 
 <p><strong>NOTE:</strong> You need to have a stylist before you can add an client to match with a stylist.</p>
 
+@if(@ViewBag.formError)
+{
+  <p>error is here.</p>
+}
+
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
