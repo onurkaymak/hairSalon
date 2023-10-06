@@ -37,5 +37,12 @@ namespace HairSalon.Controllers
 
       return RedirectToAction("Details", "Stylists", new { id = client.StylistId });
     }
+
+    // /clients/details/{id} - GET
+    public ActionResult Details(int id)
+    {
+      Client selectedClient = _db.Clients.Include(client => client.Stylist).FirstOrDefault(client => client.ClientId == id);
+      return View(selectedClient);
+    }
   }
 }
