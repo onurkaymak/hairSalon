@@ -1,4 +1,4 @@
-# Vendor and Order Tracker
+# Eau Claire's Salon
 
 #### An ASP.NET Core MVC hair salon application to track stylists with matching clients.
 
