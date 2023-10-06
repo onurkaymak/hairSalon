@@ -22,5 +22,20 @@ namespace HairSalon.Controllers
       List<Stylist> model = _db.Stylists.ToList();
       return View(model);
     }
+
+    // /stylists/create - GET
+    public ActionResult Create()
+    {
+      return View();
+    }
+
+    // /stylists/create - POST
+    [HttpPost]
+    public ActionResult Create(Stylist stylist)
+    {
+      _db.Stylists.Add(stylist);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }
