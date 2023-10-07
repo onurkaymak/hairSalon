@@ -18,9 +18,7 @@
 
 An independent C# / ASP .NET project assignment for [Epicodus](https://www.epicodus.com/), project is about "Database Basics / MySQL".
 
-## Important
-
-- This project requires
+## Important - This project requires
 
 - [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
