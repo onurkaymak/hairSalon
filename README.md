@@ -22,7 +22,9 @@ An independent C# / ASP .NET project assignment for [Epicodus](https://www.epico
 
 - [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-- [MySQL and MySQL Workbench](hhttps://www.mysql.com/downloads/)
+- [MySQL](https://dev.mysql.com/downloads/mysql)
+
+- [MySQL WorkBench](https://dev.mysql.com/downloads/workbench)
 
 ## Setup/Installation Requirements
 
