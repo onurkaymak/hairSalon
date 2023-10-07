@@ -36,7 +36,7 @@ An independent C# / ASP .NET project assignment for [Epicodus](https://www.epico
 
 - Create a file called `appsettings.json`.
 
-- Add the following code below `appsettings.json` file.
+- Add the following code below in `appsettings.json` file.
 
 ```
 {
@@ -48,10 +48,6 @@ An independent C# / ASP .NET project assignment for [Epicodus](https://www.epico
 ```
 
 - Replace the `USERNAME` and `PASSWORD` values with your own username and password for MySQL.
-
-- Type `$ dotnet run` in the terminal command line to compile and execute this application on your console.
-
-- IMPORTANT: `$ dotnet run` compiles the project folders for you without needing `$ dotnet build` command, however you can still use `$ dotnet build` if you need to compile the folders without executing the application.
 
 ### Importing the Database
 
@@ -72,6 +68,14 @@ An independent C# / ASP .NET project assignment for [Epicodus](https://www.epico
 ### IMPORTANT
 
 - Update in your `appsettings.json` file `database=onur_kaymak;` to `database=[YOUR SELECTED DATABASE NAME];`
+
+### Important - Complete the "Importing the Database" instructions before execute this application successfully.
+
+- Type `$ dotnet run` in the terminal command line to compile and execute this application while in HairSalon directory (Not the root directory HairSalon.Solution).
+
+- IMPORTANT: `$ dotnet run` compiles the project folders for you without needing `$ dotnet build` command, however you can still use `$ dotnet build` if you need to compile the folders without executing the application.
+
+- You will have a new browser tab open to view the application, you can also navigate `https://localhost:5000` manually to view it.
 
 ## Known Bugs
 
