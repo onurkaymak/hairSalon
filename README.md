@@ -51,11 +51,11 @@ An independent C# / ASP .NET project assignment for [Epicodus](https://www.epico
 
 ### Importing the Database
 
-- Open MySQL Workbench and locate the Navigator, select "Data Import/Restore.
+- Open MySQL Workbench and navigate to the `"Administration"` tab in the Navigator, select `"Data Import/Restore"`.
 
-- Select "Import from Self Contained File". Navigate to the top directory of the downloaded repository.
+- Select `"Import from Self Contained File"`, navigate to the top directory of the downloaded repository.
 
-- Select to the file called `onur_kaymak.sql` found in the root directory.
+- Select to the file called `"onur_kaymak.sql"` found in the root directory.
 
 - Under Default Schema to be Imported To, select the New button.
 
@@ -63,7 +63,7 @@ An independent C# / ASP .NET project assignment for [Epicodus](https://www.epico
 
 - Enter a database name of your choice.
 
-- Click OK and navigate to the tab called Import Progress, click Start Import at the bottom right corner of the window.
+- Click OK and navigate to the tab called `"Import Progress"`, click `"Start Import"` at the bottom right corner of the window.
 
 ### IMPORTANT
 
